@@ -4,7 +4,7 @@ This is a browser extension designed for Chromium based browsers. It removes the
 How to use it:
 
 1. Open Google Chrome/Brave and type chrome://extensions/ (or brave://extensions/ in Brave) into the URL bar
-2. Turn on Developer mode using the toggle switch in the top right-hand corner
+2. Turn on Developer mode using the toggle switch in the top right hand corner
 3. Click the Load unpacked button
 4. Select the Instagram-Overlay-Blocker folder
 
