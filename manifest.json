@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Overlay Blocker",
+  "version": "1.2",
+  "description": "Uses MutationObserver to intercept targeted elements and unlock scrolling.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.instagram.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

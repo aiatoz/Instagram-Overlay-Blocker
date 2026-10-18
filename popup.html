@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 12px;
+      font-family: Arial, sans-serif;
+    }
+    label[for] {
+      font-size: 12px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 90%;
+      padding: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #1877f2;
+    }
+    #status {
+      font-size: 11px;
+      color: #2b7a1d;
+      text-align: center;
+      margin-top: 6px;
+      font-weight: bold;
+    }
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    #toggleLabel { font-size: 13px; font-weight: bold; }
+    #toggleLabel.on { color: #2b7a1d; }
+    #toggleLabel.off { color: #999; }
+    .switch { position: relative; width: 40px; height: 22px; flex-shrink: 0; }
+    .switch input { opacity: 0; width: 0; height: 0; margin: 0; }
+    .slider {
+      position: absolute; inset: 0; cursor: pointer;
+      background: #ccc; border-radius: 22px; transition: background 0.2s;
+    }
+    .slider::before {
+      content: ""; position: absolute; width: 16px; height: 16px;
+      left: 3px; top: 3px; background: white; border-radius: 50%;
+      transition: transform 0.2s;
+    }
+    .switch input:checked + .slider { background: #0095f6; }
+    .switch input:checked + .slider::before { transform: translateX(18px); }
+  </style>
+</head>
+<body>
+  <div class="toggle-row">
+    <span id="toggleLabel" class="on">Blocker is ON</span>
+    <label class="switch">
+      <input type="checkbox" id="enabledToggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+  <label for="classInput">Target Selector Configuration:</label>
+  <input type="text" id="classInput" value=".x1n2onr6.xzkaem6">
+  <button id="saveBtn">Save Settings</button>
+  <div id="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
