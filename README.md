@@ -1,14 +1,14 @@
 # Instagram-Overlay-Blocker
-This is a browser extension designed for chromium based browsers, and it will remove Instagram popup overlay and enables seamless scrolling
+This is a browser extension designed for Chromium based browsers. It removes the Instagram pop up overlay and enables seamless scrolling.
 
-How to use it :
+How to use it:
 
-1. Open Google Chrome/Brave and type chrome://extensions/ into the URL bar
-2. Turn on Developer mode using the toggle switch in the top right hand corner
+1. Open Google Chrome/Brave and type chrome://extensions/ (or brave://extensions/ in Brave) into the URL bar
+2. Turn on Developer mode using the toggle switch in the top right-hand corner
 3. Click the Load unpacked button
 4. Select the Instagram-Overlay-Blocker folder
 
-An alternate way would be, enabling dev mode on the corresponding tab and pasting this and run it on console itself.
+An alternate way would be to open the developer tools (F12) on the Instagram tab, then paste this into the Console and run it.
 
     (function() {
         console.log("Instagram Anti-Popup Interceptor Active.");
